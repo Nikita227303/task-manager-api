@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form{
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+input,
+select{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #0056b3;
+}
+
+a{
+    color: #007bff;
+    text-decoration: none;
+}
+
+p{
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Dashboard */
+
+#logoutBtn{
+    width: auto;
+    padding: 10px 15px;
+    background-color: red;
+    float: right;
+}
+
+#taskForm{
+    width: 800px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#taskList{
+    width: 800px;
+    margin: 20px auto;
+}
+
+.task-card{
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.task-card h3{
+    margin-bottom: 10px;
+}
+
+.task-card p{
+    text-align: left;
+    margin: 5px 0;
+}
+
+.delete-btn{
+    width: auto;
+    background: red;
+    padding: 8px 15px;
+}
+
+#stats{
+    width: 800px;
+    margin: 20px auto;
+    display: flex;
+    gap: 15px;
+}
+
+.stat-card{
+    flex: 1;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
