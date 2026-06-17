@@ -18,12 +18,11 @@ const createTask=async(req,res)=>{
 const gettasks = async (req, res) => {
     try {
 
-        // 🔥 STEP 1: safety check
         if (!req.user || !req.user.userId) {
             return res.status(401).json({ message: "Unauthorized user" });
         }
 
-        // 🔥 STEP 2: simple query (NO sort, NO pagination)
+      
         const tasks = await Task.find({
             user: req.user.userId
         });
@@ -31,7 +30,7 @@ const gettasks = async (req, res) => {
         return res.status(200).json(tasks);
 
     } catch (error) {
-        console.log("🔥 GET TASK ERROR:", error);
+        console.log(" GET TASK ERROR:", error);
         return res.status(500).json({ message: error.message });
     }
 };
